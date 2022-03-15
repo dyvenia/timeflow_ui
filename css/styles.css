@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -503,6 +503,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -511,25 +521,116 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[48\%\] {
+  width: 48%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-\[905px\] {
+  width: 905px;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[176px\] {
+  width: 176px;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .rounded-\[3px\] {
   border-radius: 3px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-\[1px\] {
   border-width: 1px;
 }
 
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
 .border-select-border {
   --tw-border-opacity: 1;
   border-color: rgb(147 148 152 / var(--tw-border-opacity));
+}
+
+.border-input-border {
+  --tw-border-opacity: 1;
+  border-color: rgb(147 148 152 / var(--tw-border-opacity));
+}
+
+.border-border-table {
+  border-color: rgba(18, 24, 55, 0.16);
 }
 
 .bg-header-bg {
@@ -538,12 +639,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-filter-block-bg {
-  background-color: #9484E305;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 249 254 / var(--tw-bg-opacity));
 }
 
-.bg-heading {
+.bg-button-bg {
   --tw-bg-opacity: 1;
-  background-color: rgb(119 104 191 / var(--tw-bg-opacity));
+  background-color: rgb(148 132 227 / var(--tw-bg-opacity));
+}
+
+.bg-table-head {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 249 254 / var(--tw-bg-opacity));
+}
+
+.bg-paginatoin-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-pagination-active-bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 192 209 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-4 {
@@ -556,8 +677,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-xs {
@@ -565,7 +717,68 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-heading {
   --tw-text-opacity: 1;
   color: rgb(119 104 191 / var(--tw-text-opacity));
+}
+
+.text-button-text {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-text-table-head {
+  --tw-text-opacity: 1;
+  color: rgb(119 104 191 / var(--tw-text-opacity));
+}
+
+.text-pagination {
+  --tw-text-opacity: 1;
+  color: rgb(148 152 171 / var(--tw-text-opacity));
+}
+
+.text-paginatoin-active {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:h-7:hover {
+  height: 1.75rem;
+}
+
+.hover\:h-8:hover {
+  height: 2rem;
+}
+
+.hover\:w-7:hover {
+  width: 1.75rem;
+}
+
+.hover\:w-8:hover {
+  width: 2rem;
+}
+
+.hover\:bg-pagination-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 241 244 / var(--tw-bg-opacity));
 }

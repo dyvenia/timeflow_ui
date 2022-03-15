@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "npm run tw & npm run sync",
-    "tw": "npx tailwindcss --output /css/styles.css --content site/index.html --watch",
+    "tw": "npx tailwindcss --output css/styles.css --content site/index.html --watch",
     "sync": "npx browser-sync start --startPath ./site/ --server ./ --files /**/*.html"
   },
   "dependencies": {
