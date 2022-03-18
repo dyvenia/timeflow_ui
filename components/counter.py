@@ -9,6 +9,6 @@ def counter():
         set_count(count + 1)
 
     return html.div(
-        html.p(f"The lastest count is {count}"),
-        html.button({"onClick": handle_button}, "Add 1"),
+        html.p({"class": "text-white"}, f"The lastest count is {count}"),
+        html.button({"onClick": handle_button, "class": "bg-white"}, "Add 1"),
     )
