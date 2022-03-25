@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Mulish, sans-serif;
   /* 4 */
 }
 
@@ -423,6 +423,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+@font-face {
+  font-family: Mulish-Black;
+
+  src: url(../fonts/Mulish-Black.ttf);
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -470,6 +476,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -618,6 +626,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -754,6 +766,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -772,6 +789,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-left {
   text-align: left;
+}
+
+.font-black {
+  font-family: Mulish-Black, sans-serif;
 }
 
 .text-xl {
@@ -838,6 +859,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(119 104 191 / var(--tw-text-opacity));
 }
 
+.text-text-disable {
+  --tw-text-opacity: 1;
+  color: rgb(148 152 171 / var(--tw-text-opacity));
+}
+
 .text-pagination {
   --tw-text-opacity: 1;
   color: rgb(148 152 171 / var(--tw-text-opacity));
@@ -894,6 +920,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
+.before\:border-t-appearance::before {
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-top-color: rgb(9 6 50 / var(--tw-border-opacity));
+}
+
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
@@ -941,5 +973,75 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1140px) {
+  .xl\:static {
+    position: static;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:h-screen {
+    height: 100vh;
+  }
+
+  .xl\:h-auto {
+    height: auto;
+  }
+
+  .xl\:w-60 {
+    width: 15rem;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-\[calc\(100\%-15rem\)\] {
+    width: calc(100% - 15rem);
+  }
+
+  .xl\:max-w-\[905px\] {
+    max-width: 905px;
+  }
+
+  .xl\:max-w-\[90\%\] {
+    max-width: 90%;
+  }
+
+  .xl\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .xl\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .xl\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

@@ -4,11 +4,11 @@ module.exports = {
   content: ['./app/*.html'],
   theme: {
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1536px',
+      sm: '540px',
+      md: '720px',
+      lg: '960px',
+      xl: '1140px',
+      '2xl': '1140px',
     },
     fontFamily: {
       sans: ['Mulish', 'sans-serif'],
@@ -43,6 +43,7 @@ module.exports = {
         DEFAULT: '1rem',
       },
       center: true,
+      xl: 'max-width: 960px',
     },
     extend: {},
   },
@@ -51,11 +52,11 @@ module.exports = {
       addBase({
         '@font-face': {
           fontFamily: 'Mulish',
-          src: 'url(/fonts/Mulish-VariableFont_wght.ttf)',
+          src: 'url(../fonts/Mulish-VariableFont_wght.ttf)',
         },
         '@font-face': {
           fontFamily: 'Mulish-Black',
-          src: 'url(/fonts/Mulish-Black.ttf)',
+          src: 'url(../fonts/Mulish-Black.ttf)',
         },
       });
     }),
