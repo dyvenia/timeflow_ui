@@ -4,7 +4,7 @@ from components.layout import Container
 from components.heading import H3
 from components.input import Input
 from components.controls import TableActions
-from components.table import Table
+from components.tablebatch import Tablebatch
 from components.paginaton import Pagination
 
 quantity = 5
@@ -14,7 +14,7 @@ quantity = 5
 def YourTimelog():
     input_value, set_input_value = use_state('')
     return html.section(
-        {'class': "py-4"},
+        {'class': "py-6 xl:py-8"},
         Container(
             html.div(
                 {'class': 'flex flex-wrap justify-between items-center'},
@@ -22,7 +22,7 @@ def YourTimelog():
                 Input(input_value, set_input_value),
             ),
             TableActions(),
-            Table(),
+            Tablebatch(),
             Pagination(quantity)
         )
     )

@@ -1,6 +1,6 @@
 from idom import component, html, run
 
-wrapperClass = 'w-full md:w-1/2 flex justify-between items-center border-input-border border-[1px] rounded-[3px] py-3 px-4'
+wrapperClass = 'w-full md:w-1/2 flex justify-between items-center border-input-border border-[1px] rounded-[3px] py-2 px-4 xl:max-w-[401px]'
 checkboxTd = 'w-6 pr-4 pt-4 pb-3'
 
 

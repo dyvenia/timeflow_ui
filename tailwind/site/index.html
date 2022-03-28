@@ -19,10 +19,10 @@
         <img class="w-8" src="/img/svg/burger.svg" alt="">
       </a>
     </div>
-    <div id="menu" class="hidden absolute w-screen h-full bg-header-bg z-10 min-h-screen xl:w-full xl:block xl:static xl:h-auto">
+    <div id="menu" class="hidden absolute w-screen h-full bg-header-bg z-10 min-h-screen md:w-48 md:right-0 md:min-h-0 md:h-auto xl:w-full xl:block xl:static xl:h-auto">
       <div class="container xl:max-w-[90%]">
         <h1 class="text-general-heading font-black uppercase text-xl font-black tracking-[2px] my-4">timeflow</h1>
-        <nav class="flex flex-col">
+        <nav class="flex flex-col pb-4">
           <a class="text-nav text-xs py-2" href="#">Timelogs</a>
           <a class="text-nav text-xs py-2" href="#">Forecasts</a>
           <a class="text-nav text-xs py-2" href="#">Admin</a>
@@ -37,50 +37,50 @@
     <section class='bg-filter-block-bg py-4 text-sm'>
       <div class="container">
         <h3 class='font-black text-xs text-heading my-2 font-bold uppercase tracking-wider'>Your current project</h3>
-        <form class="flex flex-wrap justify-between items-center md:justify-start">
-          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute">
+        <form class="flex flex-wrap justify-between items-center md:justify-start 2xl:justify-between">
+          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute 2xl:w-[14%] 2xl:mr-0">
             <select class="w-full border-select-border py-3 pl-3 border-[1px] rounded-[3px] appearance-none" name="User" id="user">
               <option value disabled selected>User</option>
               <option value="lorem1">lorem1</option>
               <option value="lorem2">lorem2</option>
             </select>
           </div>
-          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute">
+          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute 2xl:w-[14%]">
             <select class="w-full border-select-border py-3 pl-3 border-[1px] rounded-[3px] appearance-none" name="Epic" id="epic">
               <option value="" disabled selected>Epic</option>
               <option value="lorem1">lorem1</option>
               <option value="lorem2">lorem2</option>
             </select>
           </div>
-          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute">
+          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute 2xl:w-[14%]">
             <select class="w-full border-select-border py-3 pl-3 border-[1px] rounded-[3px] appearance-none" name="Month" id="month">
               <option value="" disabled selected>Month</option>
               <option value="lorem1">lorem1</option>
               <option value="lorem2">lorem2</option>
             </select>
           </div>
-          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute">
+          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute 2xl:w-[14%]">
             <select class="w-full border-select-border py-3 pl-3 border-[1px] rounded-[3px] appearance-none" name="Day" id="day">
               <option value="" disabled selected>Day</option>
               <option value="lorem1">lorem1</option>
               <option value="lorem2">lorem2</option>
             </select>
           </div>
-          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute">
+          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute 2xl:w-[14%]">
             <select class="w-full border-select-border py-3 pl-3 border-[1px] rounded-[3px] appearance-none" name="Start time" id="startTime">
               <option value="" disabled selected>Start time</option>
               <option value="lorem1">lorem1</option>
               <option value="lorem2">lorem2</option>
             </select>
           </div>
-          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute">
+          <div class="block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute 2xl:w-[14%]">
             <select class="w-full border-select-border py-3 pl-3 border-[1px] rounded-[3px] appearance-none" name="End time" id="endTime">
               <option value="" disabled selected>End time</option>
               <option value="lorem1">lorem1</option>
               <option value="lorem2">lorem2</option>
             </select>
           </div>
-          <div class="w-full flex justify-center md:w-auto md:flex-1 md:justify-start">
+          <div class="w-full flex justify-center md:w-auto md:flex-1 md:justify-start 2xl:w-[14%] 2xl:flex-none">
             <button class="py-3 px-4 border-[1px] border-button-bg bg-button-bg text-button-text rounded-[3px] w-[145px] flex items-center justify-center font-black tracking-wider" type="submit">
               <span>Submit</span>
               <svg class="fill-button-text ml-4" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,11 +92,11 @@
       </div>
     </section>
 
-    <section class="my-4">
+    <section class="py-6 xl:py-8">
       <div class="container">
         <div class="flex flex-wrap justify-between items-center">
           <h3 class='font-black text-xs text-heading my-2 font-bold uppercase tracking-wider'>Your timelog</h3>
-          <div class="w-full md:w-1/2 flex justify-between items-center border-input-border border-[1px] rounded-[3px] py-3 px-4">
+          <div class="w-full md:w-1/2 flex justify-between items-center border-input-border border-[1px] rounded-[3px] py-2 px-4 xl:max-w-[401px]">
             <img src="/img/svg/search.svg" alt="">
             <input class="w-10/12 outline-none" type="text" placeholder="Search your timelog here">
             <img class="cursor-pointer" src="/img/svg/cross.svg" alt="">
@@ -138,7 +138,7 @@
 
         <!-- table -->
         <div class="overflow-auto py-6 text-xs">
-          <table class='w-[905px]'>
+          <table class='w-[905px] mx-auto xl:w-full'>
             <thead>
               <tr class="bg-table-head">
                 <th class="w-6"></th>
@@ -206,17 +206,19 @@
 
         <!-- pagination -->
         <div class="flex items-center w-full justify-center text-pagination mb-8 xl:justify-end">
-          <a class="w-8 h-8 mx-3 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8" href="#">
+          <a class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8 shrink-0" href="#">
             <svg class="fill-text rotate-180" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.44203 10.7847C1.29099 10.7847 1.13897 10.7257 1.02347 10.6087C0.792472 10.3747 0.792472 9.99466 1.02248 9.76066L4.94649 5.78466L1.02248 1.80866C0.792472 1.57466 0.792472 1.19466 1.02347 0.960659C1.25546 0.725659 1.62959 0.725659 1.86158 0.960659L5.86259 5.01466C6.24067 5.46166 6.24067 6.10766 5.89319 6.51966L1.86158 10.6087C1.74608 10.7257 1.59307 10.7847 1.44203 10.7847Z" />
             </svg>
           </a>
-          <a href="#" class="w-8 h-8 mx-3 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8">1</a>
-          <a href="#" class="w-8 h-8 mx-3 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8">2</a>
-          <a href="#" class="bg-pagination-active-bg text-paginatoin-active w-8 h-8 mx-3 flex items-center justify-center rounded-full">3</a>
-          <a href="#" class="w-8 h-8 mx-3 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8">4</a>
-          <a href="#" class="w-8 h-8 mx-3 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8">5</a>
-          <a class="w-8 h-8 mx-3 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8" href="#">
+          <div class="flex flex-wrap justify-center">
+            <a href="#" class="w-8 h-8 mx-2 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8 shrink-0">1</a>
+            <a href="#" class="w-8 h-8 mx-2 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8 shrink-0">2</a>
+            <a href="#" class="bg-pagination-active-bg text-paginatoin-active w-8 h-8 mx-2 flex items-center justify-center rounded-full shrink-0">3</a>
+            <a href="#" class="w-8 h-8 mx-2 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8 shrink-0">4</a>
+            <a href="#" class="w-8 h-8 mx-2 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8 shrink-0">5</a>
+          </div>
+          <a class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-pagination-hover hover:w-8 hover:h-8 shrink-0" href="#">
             <svg class="fill-text" width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.44203 10.7847C1.29099 10.7847 1.13897 10.7257 1.02347 10.6087C0.792472 10.3747 0.792472 9.99466 1.02248 9.76066L4.94649 5.78466L1.02248 1.80866C0.792472 1.57466 0.792472 1.19466 1.02347 0.960659C1.25546 0.725659 1.62959 0.725659 1.86158 0.960659L5.86259 5.01466C6.24067 5.46166 6.24067 6.10766 5.89319 6.51966L1.86158 10.6087C1.74608 10.7257 1.59307 10.7847 1.44203 10.7847Z" />
             </svg>

@@ -7,7 +7,7 @@ trClass = 'border-b-[1px] border-border-table'
 
 
 @component
-def TRow(id, start, end, hours, days):
+def TablebatchRow(id, start, end, hours, days):
 
     return html.tr(
         {'class': trClass},
