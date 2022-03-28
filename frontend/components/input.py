@@ -1,6 +1,6 @@
-from idom import component, html, run
+from idom import component, html, run, use_state
 
-wrapperClass = 'w-full md:w-1/2 flex justify-between items-center border-input-border border-[1px] rounded-[3px] py-3 px-4'
+wrapperClass = 'w-full md:w-1/2 flex justify-between items-center border-input-border border-[1px] rounded-[3px] py-2 px-4 xl:max-w-[401px]'
 checkboxTd = 'w-6 pr-4 pt-4 pb-3'
 
 
@@ -29,8 +29,16 @@ def Input(input_value, set_input_value):
 
 
 @component
-def Checkbox():
+def Checkbox(value_checkbox, handle_change):
     return html.td(
-        {'class': checkboxTd},
-        html.input({'class': 'w-4 h-4', 'type': 'checkbox'})
+        {
+            'class': checkboxTd,
+        },
+        html.input(
+            {
+                'class': 'w-4 h-4',
+                'checked': value_checkbox,
+                'onChange': lambda event: handle_change(event),
+                'type': 'checkbox'
+            })
     )

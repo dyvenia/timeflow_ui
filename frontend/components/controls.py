@@ -7,7 +7,7 @@ aClass = 'flex items-center mr-9 py-3'
 @component
 def Button(label):
     return html.div(
-        {'class': "w-full flex justify-center md:w-auto md:flex-1 md:justify-start"},
+        {'class': "w-full flex justify-center md:w-auto md:flex-1 md:justify-start 2xl:flex-none 2xl:w-auto"},
         html.button(
             {
                 "type": "submit",

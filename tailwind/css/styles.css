@@ -506,6 +506,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -528,9 +534,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .ml-4 {
@@ -619,6 +630,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-4 {
   width: 1rem;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .rotate-180 {
@@ -766,11 +781,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -785,6 +795,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-left {
@@ -951,8 +965,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 720px) {
+  .md\:right-0 {
+    right: 0px;
+  }
+
   .md\:mr-2 {
     margin-right: 0.5rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:min-h-0 {
+    min-height: 0px;
   }
 
   .md\:w-\[121px\] {
@@ -967,6 +993,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
+  .md\:w-48 {
+    width: 12rem;
+  }
+
   .md\:flex-1 {
     flex: 1 1 0%;
   }
@@ -979,6 +1009,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1140px) {
   .xl\:static {
     position: static;
+  }
+
+  .xl\:mr-0 {
+    margin-right: 0px;
   }
 
   .xl\:block {
@@ -1013,12 +1047,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: calc(100% - 15rem);
   }
 
-  .xl\:max-w-\[905px\] {
-    max-width: 905px;
-  }
-
   .xl\:max-w-\[90\%\] {
     max-width: 90%;
+  }
+
+  .xl\:max-w-\[401px\] {
+    max-width: 401px;
   }
 
   .xl\:justify-end {
@@ -1035,13 +1069,35 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 1.5rem;
   }
 
-  .xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .xl\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .\32xl\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .\32xl\:w-\[13\%\] {
+    width: 13%;
+  }
+
+  .\32xl\:w-\[14\%\] {
+    width: 14%;
+  }
+
+  .\32xl\:flex-none {
+    flex: none;
+  }
+
+  .\32xl\:justify-between {
+    justify-content: space-between;
   }
 }

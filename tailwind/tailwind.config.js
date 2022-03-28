@@ -8,7 +8,7 @@ module.exports = {
       md: '720px',
       lg: '960px',
       xl: '1140px',
-      '2xl': '1140px',
+      '2xl': '1440px',
     },
     fontFamily: {
       sans: ['Mulish', 'sans-serif'],
@@ -43,7 +43,6 @@ module.exports = {
         DEFAULT: '1rem',
       },
       center: true,
-      xl: 'max-width: 960px',
     },
     extend: {},
   },

@@ -5,7 +5,7 @@ from components.controls import Button
 from components.heading import H3
 
 selectClass = "w-full border-select-border py-3 pl-3 border-[1px] rounded-[3px] appearance-none"
-wrapperClass = "block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute"
+wrapperClass = "block relative w-full sm:w-[48%] md:w-[121px] md:mr-2 my-4 before:content-[''] before:border-[6px] before:border-[transparent] before:border-t-appearance before:top-1/2 before:right-5 before:-translate-y-0.5 before:absolute 2xl:w-[14%] 2xl:mr-0"
 
 
 @component
@@ -33,7 +33,7 @@ def CurrentProject():
             H3('Your current project'),
             html.form(
                 {
-                    'class': "flex flex-wrap justify-between items-center md:justify-start",
+                    'class': "flex flex-wrap justify-between items-center md:justify-start 2xl:justify-between",
                     "onSubmit": hande_submit,
                 },
                 Select(
