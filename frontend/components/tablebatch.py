@@ -1,4 +1,4 @@
-from idom import component, html, run
+from idom import component, html, run, use_state
 from components.input import Checkbox
 from components.tablebatch_row import TablebatchRow
 
@@ -7,6 +7,8 @@ thClass = 'w-[176px] text-left text-text-table-head uppercase py-1 leading-5'
 
 @component
 def Tablebatch():
+    checked, set_checked = use_state({})
+    print(checked)
     return html.div(
         {'class': 'overflow-auto py-6 text-xs'},
         html.table(
@@ -42,16 +44,16 @@ def Tablebatch():
             ),
             html.tbody(
                 {},
-                TablebatchRow('2', '2022-02-1 08:00',
-                              '2022-02-1 18:00', '2.0', '0.25'),
-                TablebatchRow('2', '2022-02-1 08:00',
-                              '2022-02-1 18:00', '2.0', '0.25'),
-                TablebatchRow('2', '2022-02-1 08:00',
-                              '2022-02-1 18:00', '2.0', '0.25'),
-                TablebatchRow('2', '2022-02-1 08:00',
-                              '2022-02-1 18:00', '2.0', '0.25'),
-                TablebatchRow('2', '2022-02-1 08:00',
-                              '2022-02-1 18:00', '2.0', '0.25')
+                TablebatchRow(1, '2', '2022-02-1 08:00',
+                              '2022-02-1 18:00', '2.0', '0.25', checked, set_checked),
+                TablebatchRow(2, '2', '2022-02-1 08:00',
+                              '2022-02-1 18:00', '2.0', '0.25', checked, set_checked),
+                TablebatchRow(3, '2', '2022-02-1 08:00',
+                              '2022-02-1 18:00', '2.0', '0.25', checked, set_checked),
+                TablebatchRow(4, '2', '2022-02-1 08:00',
+                              '2022-02-1 18:00', '2.0', '0.25', checked, set_checked),
+                TablebatchRow(5, '2', '2022-02-1 08:00',
+                              '2022-02-1 18:00', '2.0', '0.25', checked, set_checked)
             )
         )
     )
